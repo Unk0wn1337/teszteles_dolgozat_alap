@@ -5,6 +5,9 @@
 import { Tesztesetek } from "./teszt.js";
 
 export function masodfokuEgyenletMegoldasa(a, b, c) {
+    const eredmeny = [];
+    let X1;
+    let X2; 
     if(a === 0) {
         return "HIBA: az 'a' erteke nem lehet 0"
     }if((-b - Math.sqrt(b * b - 4 * a * c)) < 0 ){
@@ -12,7 +15,7 @@ export function masodfokuEgyenletMegoldasa(a, b, c) {
     } else {
         let x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
         let x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-        const eredmeny = {
+         eredmeny = {
             X1: x1,
             X2: x2,
 
